@@ -90,7 +90,7 @@ export function ProjectsSession({ projects }: ProjectsSessionProps) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="text-xl text-gray-300 mb-8 text-center"
+        className="text-xl text-gray-900 mb-8 text-center"
       >
         <TypewriterText
           text="Conquistas que marcaram nossa trajetória"

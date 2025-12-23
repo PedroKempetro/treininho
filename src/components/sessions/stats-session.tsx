@@ -3,13 +3,27 @@
 import { Stat } from "@/types/kempetro-wrapped";
 import { TypewriterText } from "@/components/typewriter-text";
 import { motion } from "framer-motion";
+import { Users, Target, FileText, Coffee, Presentation } from "lucide-react";
 
 interface StatsSessionProps {
   stats: Stat[];
 }
 
+const iconMap: Record<string, any> = {
+  "Reuniões Participadas": Users,
+  "Projetos Concluídos": Target,
+  "Relatórios Entregues": FileText,
+  "Cafés Tomados": Coffee,
+  "Apresentações Feitas": Presentation
+};
+
 export function StatsSession({ stats }: StatsSessionProps) {
   const rotations = [-4, 3, -1, -5, -2, 2];
+
+  const getIconComponent = (label: string) => {
+    const IconComponent = iconMap[label] || Target;
+    return IconComponent;
+  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12">
@@ -84,12 +98,15 @@ export function StatsSession({ stats }: StatsSessionProps) {
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full gap-6">
               <motion.div 
-                className="text-8xl"
+                className="flex justify-center"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 2.7 + i * 0.15, type: "spring" }}
               >
-                {stat.icon}
+                {(() => {
+                  const IconComponent = getIconComponent(stat.label);
+                  return <IconComponent className="w-20 h-20" style={{ color: stat.color }} strokeWidth={1.5} />;
+                })()}
               </motion.div>
               
               <motion.div

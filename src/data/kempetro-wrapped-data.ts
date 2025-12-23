@@ -226,12 +226,12 @@ export const kempetroWrappedData: KempetroWrappedData = {
   ],
   
   stats: [
-    { label: "Horas Dedicadas", value: "8.640", icon: "⏱️", color: "#3b82f6" },
-    { label: "Reuniões Participadas", value: "247", icon: "👥", color: "#8b5cf6" },
-    { label: "Relatórios Feitos", value: "89", icon: "📄", color: "#ec4899" },
-    { label: "Sistemas Estudados", value: "15", icon: "💻", color: "#10b981" },
-    { label: "Cafés Tomados", value: "1.523", icon: "☕", color: "#f59e0b" },
-    { label: "Linhas de Código", value: "47.892", icon: "⌨️", color: "#06b6d4" }
+    { label: "Horas Dedicadas", value: "14.400", icon: "⏱️", color: "#3b82f6" },
+    { label: "Reuniões Participadas", value: "42", icon: "👥", color: "#8b5cf6" },
+    { label: "Relatórios Entregues", value: "28", icon: "📄", color: "#ec4899" },
+    { label: "Projetos Desenhados", value: "12", icon: "📐", color: "#10b981" },
+    { label: "Cafés Tomados", value: "350", icon: "☕", color: "#f59e0b" },
+    { label: "Processos Mapeados", value: "8", icon: "🔄", color: "#06b6d4" }
   ],
   
   skills: [

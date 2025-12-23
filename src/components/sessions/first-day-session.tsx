@@ -3,14 +3,15 @@
 import { TypewriterText } from "@/components/typewriter-text";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { AlertCircle, Users, Lightbulb } from "lucide-react";
 
 export function FirstDaySession() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const firstDayCards = [
-    { emoji: "😰", text: "Nervosismo" },
-    { emoji: "🤝", text: "Novos Amigos" },
-    { emoji: "✨", text: "Expectativas" }
+    { icon: AlertCircle, text: "Nervosismo" },
+    { icon: Users, text: "Novos Amigos" },
+    { icon: Lightbulb, text: "Expectativas" }
   ];
 
   return (
@@ -131,14 +132,14 @@ export function FirstDaySession() {
                   padding: hoveredIndex === i ? "80px 40px" : "60px 40px",
                 }}
               >
-                {/* Emoji */}
+                {/* Icon */}
                 <motion.div
-                  className="text-8xl mb-6 text-center"
+                  className="flex justify-center mb-6"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 4.7 + i * 0.3, type: "spring" }}
                 >
-                  {item.emoji}
+                  <item.icon className="w-20 h-20 text-gray-900" strokeWidth={1.5} />
                 </motion.div>
 
                 <h3 className="text-4xl font-bold text-gray-900 text-center font-['Poppins']">
@@ -149,19 +150,6 @@ export function FirstDaySession() {
           );
         })}
       </div>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 7 }}
-        className="text-xl text-gray-600 mt-12 italic font-['Poppins']"
-      >
-        <TypewriterText
-          text='"E assim começou nossa jornada na Kempetro..."'
-          speed={40}
-          delay={7200}
-        />
-      </motion.p>
     </div>
   );
 }

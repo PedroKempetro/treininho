@@ -3,6 +3,7 @@
 import { Intern } from "@/types/kempetro-wrapped";
 import { TypewriterText } from "@/components/typewriter-text";
 import { motion } from "framer-motion";
+import { User } from "lucide-react";
 
 interface WhoAreInternsSessionProps {
   interns: Intern[];
@@ -128,7 +129,9 @@ export function WhoAreInternsSession({
             transition={{ delay: 4.5 + i * 0.1 }}
             className="bg-white/5 backdrop-blur rounded-xl p-4 border border-orange-500/20 hover:border-orange-400/50 transition-all"
           >
-            <div className="text-4xl mb-2">👤</div>
+            <div className="flex justify-center mb-2">
+              <User className="w-10 h-10 text-orange-500" strokeWidth={1.5} />
+            </div>
             <div className="text-xs font-semibold">{intern.name}</div>
           </motion.div>
         ))}

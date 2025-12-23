@@ -4,13 +4,26 @@ import { Challenge } from "@/types/kempetro-wrapped";
 import { TypewriterText } from "@/components/typewriter-text";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Wrench, Users, TrendingUp, Lightbulb, Target, X, Check } from "lucide-react";
 
 interface ChallengesSessionProps {
   challenges: Challenge[];
 }
 
+const iconMap: Record<string, any> = {
+  "Adaptação ao Ambiente": Wrench,
+  "Trabalho em Equipe": Users,
+  "Gestão do Tempo": TrendingUp,
+  "Aprendizado Técnico": Lightbulb,
+  "Responsabilidades": Target
+};
+
 export function ChallengesSession({ challenges }: ChallengesSessionProps) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
+  const getIconComponent = (title: string) => {
+    return iconMap[title] || Target;
+  };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12 font-['Poppins']">
@@ -133,12 +146,15 @@ export function ChallengesSession({ challenges }: ChallengesSessionProps) {
               >
                 {/* Icon */}
                 <motion.div
-                  className="text-6xl mb-4 text-center"
+                  className="flex justify-center mb-4"
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ delay: 2.7 + i * 0.2, type: "spring" }}
                 >
-                  {challenge.icon}
+                  {(() => {
+                    const IconComponent = getIconComponent(challenge.title);
+                    return <IconComponent className="w-16 h-16 text-gray-900" strokeWidth={1.5} />;
+                  })()}
                 </motion.div>
 
                 <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center font-['Poppins']">
@@ -147,7 +163,9 @@ export function ChallengesSession({ challenges }: ChallengesSessionProps) {
 
                 {/* Before */}
                 <div className="mb-4">
-                  <div className="text-gray-700 text-sm font-semibold mb-2 font-['Poppins']">❌ Antes</div>
+                  <div className="text-gray-700 text-sm font-semibold mb-2 font-['Poppins'] flex items-center gap-2">
+                    <X className="w-4 h-4" /> Antes
+                  </div>
                   <p className="text-sm text-gray-900 leading-relaxed font-['Poppins']">
                     {challenge.before}
                   </p>
@@ -155,7 +173,9 @@ export function ChallengesSession({ challenges }: ChallengesSessionProps) {
 
                 {/* After */}
                 <div className="mb-4">
-                  <div className="text-gray-700 text-sm font-semibold mb-2 font-['Poppins']">✅ Depois</div>
+                  <div className="text-gray-700 text-sm font-semibold mb-2 font-['Poppins'] flex items-center gap-2">
+                    <Check className="w-4 h-4" /> Depois
+                  </div>
                   <p className="text-sm text-gray-900 leading-relaxed font-['Poppins']">
                     {challenge.after}
                   </p>
