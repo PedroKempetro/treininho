@@ -200,7 +200,7 @@ export function KempetroWrappedMain() {
       </div>
 
       {/* Navigation Controls */}
-      <div className="fixed bottom-8 left-0 right-0 z-20 flex items-center justify-center gap-4 px-4">
+      <div className="fixed bottom-8 left-160 z-20 flex items-center gap-4 px-4">
         <button
           onClick={prevSession}
           disabled={currentSession === 0}
@@ -279,7 +279,7 @@ export function KempetroWrappedMain() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}
-        className="fixed bottom-24 left-0 right-0 text-center text-gray-400 text-sm z-10"
+        className="fixed bottom-24 left-0.5 right-21 text-center text-gray-400 text-sm z-10"
       >
         Use as setas ← → ou Space para navegar • Ctrl+T para modo técnico
       </motion.div>
