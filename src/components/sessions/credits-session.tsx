@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { toPng } from "html-to-image";
 import { Share2, Download } from "lucide-react";
+import { ConfettiCanvas } from "@/components/confetti-canvas";
 
 interface CreditsSessionProps {
   interns: Intern[];
@@ -96,6 +97,9 @@ export function CreditsSession({ interns, companyName, year }: CreditsSessionPro
     <div className="relative flex flex-col items-center justify-center min-h-screen py-20 px-4 overflow-hidden">
       {/* Background glow effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-orange-600/10" />
+
+      {/* Confetes */}
+      <ConfettiCanvas />
 
       <AnimatePresence mode="wait">
         <motion.div

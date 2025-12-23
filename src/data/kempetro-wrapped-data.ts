@@ -10,6 +10,14 @@ export const kempetroWrappedData: KempetroWrappedData = {
   
   interns: [
     { 
+      name: "Valney Conceicao Dos Santos Junior", 
+      course: "Supervisor de Capital Humano", 
+      area: "RH", 
+      startDate: "2024-01",
+      emoji: "💫",
+      message: "Valney, você é aquele tipo raro de pessoa que transforma ambiente em casa. No meio de metas, prazos e responsabilidades, você nunca esqueceu que antes de tudo existem pessoas. Seu cuidado, sua escuta e seu jeito humano fizeram a diferença em dias que ninguém mais via. A gente não aprende isso em faculdade nenhuma. Obrigado por acreditar, acolher e cuidar — você marcou essa jornada mais do que imagina."
+    },
+    { 
       name: "Andressa Alves dos Santos", 
       course: "Engenharia Civil", 
       area: "Projetos", 
