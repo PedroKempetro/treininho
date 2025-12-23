@@ -14,14 +14,12 @@ export function AudioPlayer() {
     if (audioRef.current) {
       audioRef.current.volume = 0.3;
       
-      // Tenta reproduzir automaticamente
       const playAudio = async () => {
         try {
           await audioRef.current?.play();
           setIsPlaying(true);
           setHasInteracted(true);
         } catch (error) {
-          // Autoplay bloqueado - esperando clique do usuário
           console.log("Autoplay bloqueado, aguardando interação do usuário");
           setIsPlaying(false);
         }
@@ -35,7 +33,6 @@ export function AudioPlayer() {
     if (!audioRef.current) return;
 
     if (!hasInteracted) {
-      // Primeira interação - inicia o áudio
       try {
         await audioRef.current.play();
         setIsPlaying(true);
@@ -45,7 +42,6 @@ export function AudioPlayer() {
         console.error("Erro ao iniciar áudio:", error);
       }
     } else {
-      // Depois da primeira interação, funciona como mute/unmute
       if (isMuted) {
         audioRef.current.muted = false;
         setIsMuted(false);

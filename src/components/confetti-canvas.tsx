@@ -10,7 +10,7 @@ const palette = [
   [255, 107, 107],
   [116, 185, 255],
   [120, 224, 143],
-  [249, 115, 22] // Orange da Kempetro
+  [249, 115, 22] 
 ];
 
 const rand = (a: number, b: number) => a + Math.random() * (b - a);

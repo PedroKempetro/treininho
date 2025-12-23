@@ -29,19 +29,16 @@ export function CreditsSession({ interns, companyName, year }: CreditsSessionPro
     setIsSharing(true);
     
     try {
-      // Captura o card como imagem
       const dataUrl = await toPng(cardRef.current, {
         quality: 1,
         pixelRatio: 2,
         backgroundColor: '#ffffff',
       });
 
-      // Converte para blob
       const response = await fetch(dataUrl);
       const blob = await response.blob();
       const file = new File([blob], `${intern.name}-kempetro.png`, { type: 'image/png' });
 
-      // Tenta usar Web Share API
       if (navigator.share && navigator.canShare({ files: [file] })) {
         await navigator.share({
           files: [file],
@@ -49,7 +46,6 @@ export function CreditsSession({ interns, companyName, year }: CreditsSessionPro
           text: `Confira essa mensagem especial da Kempetro!`,
         });
       } else {
-        // Fallback: download da imagem
         const link = document.createElement('a');
         link.download = `${intern.name}-kempetro.png`;
         link.href = dataUrl;

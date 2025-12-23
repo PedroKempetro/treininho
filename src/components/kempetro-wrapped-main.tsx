@@ -64,7 +64,6 @@ export function KempetroWrappedMain() {
     setCurrentSession(index);
   }, [currentSession]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowRight" || e.key === " ") {
@@ -85,19 +84,19 @@ export function KempetroWrappedMain() {
 
   const getBackgroundColor = () => {
     const colors = [
-      "from-black via-orange-950 to-black", // opening
-      "from-orange-950 via-black to-orange-900", // who-are-interns
-      "from-black via-orange-900 to-black", // first-day
-      "from-orange-900 via-black to-orange-950", // areas
-      "from-black via-orange-950 to-orange-900", // projects
-      "from-orange-950 via-orange-900 to-black", // stats
-      "from-black via-orangzinc-900 to-black", // papos-estagiario
-      "from-orange-900 via-e-900 to-black", // learnings
-      "from-orange-900 via-black to-orange-950", // moments
-      "from-orange-950 via-black to-orange-900", // challenges
-      "from-black via-orange-950 to-black", // feedbacks
-      "from-orange-900 via-black to-orange-950", // future
-      "from-black via-zinc-950 to-black", // credits
+      "from-black via-orange-950 to-black", 
+      "from-orange-950 via-black to-orange-900", 
+      "from-black via-orange-900 to-black", 
+      "from-orange-900 via-black to-orange-950", 
+      "from-black via-orange-950 to-orange-900", 
+      "from-orange-950 via-orange-900 to-black", 
+      "from-black via-orangzinc-900 to-black", 
+      "from-orange-900 via-e-900 to-black", 
+      "from-orange-900 via-black to-orange-950", 
+      "from-orange-950 via-black to-orange-900", 
+      "from-black via-orange-950 to-black", 
+      "from-orange-900 via-black to-orange-950", 
+      "from-black via-zinc-950 to-black",
     ];
     return colors[currentSession];
   };
