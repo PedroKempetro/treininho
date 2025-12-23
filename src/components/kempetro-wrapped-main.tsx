@@ -152,19 +152,19 @@ export function KempetroWrappedMain() {
     >
       {/* Animated background particles (reduzido para melhor performance) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-40">
-        {[...Array(15)].map((_, i) => (
+        {typeof window !== "undefined" && [...Array(15)].map((_, i) => (
           <motion.div
             key={`${currentSession}-${i}`}
             className="absolute w-2 h-2 bg-orange-400/40 rounded-full shadow-lg shadow-orange-400/30"
             initial={{
-              x: Math.random() * (typeof window !== "undefined" ? window.innerWidth : 1920),
-              y: Math.random() * (typeof window !== "undefined" ? window.innerHeight : 1080),
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
               opacity: 0,
             }}
             animate={{
               y: [
                 null,
-                Math.random() * (typeof window !== "undefined" ? window.innerHeight : 1080),
+                Math.random() * window.innerHeight,
               ],
               opacity: [0, 1, 0],
             }}

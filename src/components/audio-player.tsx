@@ -11,15 +11,13 @@ export function AudioPlayer() {
 
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.3; // Volume inicial a 30%
+      audioRef.current.volume = 0.3;
       
-      // Tenta iniciar o áudio automaticamente
       const playAudio = async () => {
         try {
           await audioRef.current?.play();
           setIsPlaying(true);
         } catch (error) {
-          // Se falhar (política de autoplay), espera interação do usuário
           console.log("Autoplay bloqueado, aguardando interação do usuário");
           setIsPlaying(false);
         }
@@ -62,7 +60,7 @@ export function AudioPlayer() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, type: "spring" }}
         onClick={toggleMute}
-        className="fixed top-6 right-6 z-50 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all"
+        className="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all"
         title={isMuted ? "Ativar som" : "Desativar som"}
       >
         {isMuted ? (
