@@ -18,6 +18,7 @@ import { FutureSession } from "./sessions/future-session";
 import { CreditsSession } from "./sessions/credits-session";
 import { Snowfall } from "./snowfall";
 import { GearBelt } from "./gear-belt";
+import { AudioPlayer } from "./audio-player";
 
 const sessions: SessionType[] = [
   "opening",
@@ -283,6 +284,9 @@ export function KempetroWrappedMain() {
 
       {/* Gear and Belt */}
       <GearBelt currentSession={currentSession} totalSessions={sessions.length} />
+
+      {/* Audio Player */}
+      <AudioPlayer />
     </div>
   );
 }

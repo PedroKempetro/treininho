@@ -28,7 +28,7 @@ export function StatsSession({ stats }: StatsSessionProps) {
         className="text-2xl text-orange-600 mb-12 text-center"
       >
         <TypewriterText
-          text="Estilo Spotify Wrapped"
+          text="Saiba nossas melhores conquistas!"
           speed={50}
           delay={1800}
         />
