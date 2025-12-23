@@ -23,7 +23,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Projetos", 
       startDate: "2024-01",
       emoji: "💫",
-      message: "Andressa, sua presença trouxe equilíbrio, dedicação e sensibilidade para o time. Você mostrou que engenharia também é olhar atento, responsabilidade e cuidado com cada detalhe. Seu caminho está sendo construído com firmeza — e ele é promissor."
+      message: "Andressa, você trouxe para nós algo que nenhuma faculdade ensina: sensibilidade. No meio da correria, você foi o ponto de equilíbrio, aquela que olhava com cuidado quando todo mundo só queria correr. Sua delicadeza nunca foi fraqueza, foi sua maior força. Sentiremos saudade da sua presença que acalmava e da sua dedicação que inspirava. Leve esse seu jeito humano para onde for, o mundo precisa desesperadamente disso."
     },
     { 
       name: "Alisson Rodrigo de Araujo Barreto", 
@@ -31,7 +31,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Processos", 
       startDate: "2024-01",
       emoji: "💪",
-      message: "Alisson, você é consistência e compromisso. Seu jeito tranquilo esconde uma força enorme de entrega e responsabilidade. Você fez diferença exatamente por estar sempre ali, somando, ajudando e sustentando o time quando era preciso."
+      message: "Alisson, você foi a nossa âncora. Nos dias difíceis, era na sua constância que a gente se apoiava. Você tem uma força silenciosa, de quem resolve, de quem está ali para o que der e vier. É difícil se despedir de alguém em quem confiamos tanto. Obrigado por ter sido suporte, por ter sido parceiro e por ter nos dado a honra de conviver com um profissional tão leal quanto você."
     },
     { 
       name: "Alisson Lucas Alves de Oliveira", 
@@ -39,7 +39,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "TI", 
       startDate: "2024-02",
       emoji: "💻",
-      message: "Alisson, você é daqueles profissionais que a gente sabe que vai longe — e rápido. Seu comprometimento, sua curiosidade e sua entrega fazem você se destacar naturalmente. Mais do que um dev incrível, você é alguém que soma, que ajuda, que constrói junto. Trabalhar ao seu lado foi aprender na prática o que é paixão pelo que se faz. O futuro vai ouvir muito o seu nome."
+      message: "Alisson, tem gente que passa pela vida da gente e tem gente que marca. Você tem uma inquietude bonita, uma vontade de devorar o mundo que brilha no olho. Ver você crescer foi presenciar alguém que não aceita o mediano, que quer mais, que busca, que corre atrás. Você não só aprendeu rápido, você trouxe vida pro ambiente. Sentiremos saudade da sua energia contagiante e da forma como você faz a gente acreditar que tudo é possível quando se tem vontade de verdade."
     },
     { 
       name: "Anna Beatriz Silva Dos Anjos", 
@@ -47,7 +47,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Automação", 
       startDate: "2024-02",
       emoji: "🔥",
-      message: "Anna, sua determinação fala antes mesmo das palavras. Você encara desafios com coragem e maturidade, e isso inspira. Sua jornada aqui deixou marcas de competência e vontade de crescer — continue, você está no caminho certo."
+      message: "Anna, foi lindo ver você florescer. Você chegou e, aos poucos, com essa sua determinação firme, conquistou um espaço que é só seu. Sua maturidade nos surpreendeu e nos ensinou. Você sai daqui pronta para qualquer batalha, mas saiba que deixou marcas de admiração em cada um de nós. Não perca nunca essa coragem de encarar o desconhecido."
     },
     { 
       name: "Caique Mendes Pereira Rocha", 
@@ -55,7 +55,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "TI", 
       startDate: "2024-03",
       emoji: "🎯",
-      message: "Caique, sua mente analítica e seu jeito prático tornaram problemas mais simples e soluções mais rápidas. Você trouxe clareza, lógica e colaboração. É o tipo de profissional que qualquer equipe quer por perto."
+      message: "Caique, você tem o dom raro de descomplicar a vida. Sua clareza e seu companheirismo tornaram os dias pesados muito mais leves. Mais do que um estagiário brilhante, você foi um amigo com quem todos queriam estar perto. A saudade vai bater quando olharmos para o lado e não tivermos essa sua parceria pronta para resolver qualquer parada."
     },
     { 
       name: "Eduardo da Silva Meneghetti", 
@@ -63,7 +63,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Automação", 
       startDate: "2024-03",
       emoji: "⚡",
-      message: "Eduardo, sua dedicação e foco mostram o quanto você leva a sério tudo o que faz. Você construiu seu espaço com esforço e respeito, e isso deixa um legado silencioso, mas forte."
+      message: "Eduardo, o respeito que você impõe pela sua dedicação é algo admirável. Você é a prova viva de que quem trabalha sério e com foco chega mais longe. Sua jornada aqui foi marcada por um esforço genuíno, sem atalhos. Sentiremos falta da sua seriedade comprometida, aquela de quem trata cada tarefa como a missão mais importante do dia."
     },
     { 
       name: "Eduardo Sousa Farias", 
@@ -71,7 +71,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Projetos", 
       startDate: "2024-04",
       emoji: "🏗️",
-      message: "Eduardo, sua postura profissional e seu comprometimento fizeram diferença no dia a dia. Você mostrou que crescimento vem de responsabilidade e vontade de aprender — e você tem ambos."
+      message: "Eduardo, vimos você se transformar. De passos iniciais para uma caminhada firme e confiante. Você cresceu na nossa frente, e não há orgulho maior para um time do que ver isso acontecer. Sua postura sempre foi de quem quer aprender e fazer o certo. Leve essa vontade no peito; foi uma honra fazer parte da sua história."
     },
     { 
       name: "Filipe da Silva Santana", 
@@ -79,7 +79,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "PMO", 
       startDate: "2024-04",
       emoji: "🧠",
-      message: "Filipe, seu esforço é algo que não passa despercebido — ele inspira. Você mostra, todos os dias, que dedicação de verdade é aquela que continua mesmo quando ninguém está olhando. Sua postura, responsabilidade e vontade de fazer sempre melhor elevam quem está ao seu redor. Você é prova de que excelência não é talento, é constância. A Kempetro foi mais forte com você aqui."
+      message: "Filipe, o mundo está cheio de gente que faz barulho, mas é raro encontrar alguém que faz história em silêncio, como você. Você nos ensinou que responsabilidade não é um peso, é uma postura. Ver você trabalhar foi ter a certeza diária de que tudo ficaria bem. A gente não vai sentir falta apenas do seu trabalho, vamos sentir falta da sua integridade. Você sai daqui maior do que entrou, mas deixa a gente melhor do que éramos. Obrigado por ter sido esse exemplo."
     },
     { 
       name: "Glecia Santos Figueiredo", 
@@ -87,7 +87,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Processos", 
       startDate: "2024-05",
       emoji: "✨",
-      message: "Glecia, sua inteligência e sensibilidade caminham juntas. Você trouxe profundidade, atenção e cuidado em tudo o que fez. Seu brilho está nos detalhes — e eles importam muito."
+      message: "Glecia, você colocou coração em tudo o que tocou. Não era só sobre fazer o trabalho, era sobre o cuidado, sobre a atenção, sobre se importar de verdade. Pessoas como você, que misturam inteligência com empatia, são joias raras no mercado. Obrigado por ter cuidado da gente e dos nossos projetos com tanto zelo. Vai fazer muita falta."
     },
     { 
       name: "Ian Hage Moura", 
@@ -95,7 +95,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Processos", 
       startDate: "2024-05",
       emoji: "🚀",
-      message: "Ian, sua energia e sua entrega foram essenciais. Você mostrou que organização, iniciativa e trabalho em equipe podem andar juntos. Seu crescimento foi visível — e admirável."
+      message: "Ian, você foi o pulso desse time. Sua energia e sua proatividade nos moviam. Você mostrou que é possível ser extremamente competente sem perder o sorriso e a leveza. O ambiente perde um pouco da cor sem você por perto, mas ficamos felizes em saber que outro lugar vai ganhar essa luz que você carrega."
     },
     { 
       name: "Joao Vytor Santos Brito", 
@@ -103,7 +103,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "TI", 
       startDate: "2024-06",
       emoji: "🌟",
-      message: "João, sua curiosidade e vontade de aprender fizeram você evoluir rápido. Você encara desafios com coragem e aprende com cada passo. O futuro técnico é promissor — e merecido."
+      message: "João, a sua curiosidade é o seu superpoder. Foi emocionante ver você tropeçar, levantar, perguntar e aprender, sempre com humildade. Você nos lembrou da beleza que é estar no início de tudo e ter fome de conhecimento. Nunca perca esse brilho de 'eterno aprendiz', ele vai te levar ao topo."
     },
     { 
       name: "João Victor Ferreira Gerson", 
@@ -111,7 +111,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Projetos", 
       startDate: "2024-06",
       emoji: "🛠️",
-      message: "João, sua dedicação e seu compromisso mostraram maturidade profissional. Você construiu confiança dia após dia, e isso é uma das maiores conquistas que alguém pode ter."
+      message: "João, confiança demora anos para ser construída, mas você conseguiu isso em tempo recorde. Você transmitiu uma segurança que nos deixava tranquilos. Saber que podíamos contar com você foi um presente. Você leva daqui nossa total admiração e deixa um exemplo de como ser um profissional de caráter."
     },
     { 
       name: "Luiza Gabriele Costa Lima", 
@@ -119,7 +119,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "PMO", 
       startDate: "2024-07",
       emoji: "💝",
-      message: "Luiza, sua organização, sensibilidade e postura profissional trouxeram leveza ao time. Você mostrou que competência também é saber ouvir, colaborar e crescer junto."
+      message: "Luiza, sua organização trouxe paz, mas foi a sua pessoa que trouxe alegria. Você tem o dom de harmonizar o ambiente, de fazer com que as coisas fluam. Sentiremos saudade da sua leveza e da forma bonita como você lida com as pessoas e os desafios. Obrigado por ter sido essa presença tão positiva entre nós."
     },
     { 
       name: "Lucas Rivas Leal", 
@@ -127,7 +127,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "TI", 
       startDate: "2024-07",
       emoji: "⚙️",
-      message: "Lucas, sua capacidade técnica aliada à vontade de aprender fizeram você se destacar. Você é daqueles que evoluem rápido porque realmente se importam com o que fazem."
+      message: "Lucas, dá gosto ver alguém amar o que faz como você. Sua paixão não é apenas técnica, ela é visível na sua atitude. Você mergulhou de cabeça e vestiu a camisa com uma vontade contagiante. Pessoas intensas como você são inesquecíveis. Continue colocando essa alma no seu trabalho, você vai longe demais."
     },
     { 
       name: "Marcus Vinicius Argolo da Silva Filho", 
@@ -135,7 +135,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
       area: "Automação", 
       startDate: "2024-08",
       emoji: "🔧",
-      message: "Marcus, sua dedicação e seu jeito firme mostraram comprometimento real. Você enfrentou desafios com maturidade e deixou sua marca com esforço e seriedade."
+      message: "Marcus, sua resiliência nos inspirou. Você é forte, focado e não foge da luta. Em tempos onde muitos desistem no primeiro obstáculo, você se manteve firme. Foi uma honra ter alguém com a sua fibra no nosso time. O mercado ganha um guerreiro, e nós ficamos com a saudade da sua força."
     },
     { name: "Mariana Vitoria E S Santana", course: "Engenharia Civil", area: "Projetos", startDate: "2024-08" },
     { name: "Maria Julia Porto Santos", course: "Administração", area: "PMO", startDate: "2024-09" },
