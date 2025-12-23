@@ -20,8 +20,8 @@ export function FadeInWhenVisible({
   duration = 0.6,
   direction = "up",
 }: FadeInWhenVisibleProps) {
-  const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { threshold: 0.1 });
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref as React.RefObject<Element>, { threshold: 0.1 });
 
   const directionOffset = {
     up: { y: 40 },
