@@ -37,8 +37,13 @@ export function KempetroWrappedMain() {
   const [currentSession, setCurrentSession] = useState(0);
   const [direction, setDirection] = useState(0);
   const [techMode, setTechMode] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   const data = kempetroWrappedData;
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const nextSession = useCallback(() => {
     if (currentSession < sessions.length - 1) {
@@ -152,7 +157,7 @@ export function KempetroWrappedMain() {
     >
       {/* Animated background particles (reduzido para melhor performance) */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-40">
-        {typeof window !== "undefined" && [...Array(15)].map((_, i) => (
+        {isMounted && [...Array(15)].map((_, i) => (
           <motion.div
             key={`${currentSession}-${i}`}
             className="absolute w-2 h-2 bg-orange-400/40 rounded-full shadow-lg shadow-orange-400/30"
