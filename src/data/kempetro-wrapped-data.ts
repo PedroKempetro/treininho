@@ -237,8 +237,8 @@ export const kempetroWrappedData: KempetroWrappedData = {
   skills: [
     // Hard Skills
     { name: "AutoCAD", type: "hard", level: 85 },
-    { name: "Python", type: "hard", level: 80 },
-    { name: "React", type: "hard", level: 75 },
+    { name: "Gestão de Projetos", type: "hard", level: 88 },
+    { name: "Análise de Processos", type: "hard", level: 82 },
     { name: "SQL", type: "hard", level: 90 },
     { name: "Power BI", type: "hard", level: 85 },
     { name: "SAP", type: "hard", level: 70 },

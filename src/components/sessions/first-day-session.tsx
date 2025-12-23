@@ -15,15 +15,6 @@ export function FirstDaySession() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12 font-['Poppins']">
-      <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: "spring", duration: 1 }}
-        className="text-8xl mb-8"
-      >
-        📅
-      </motion.div>
-
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

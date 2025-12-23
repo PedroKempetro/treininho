@@ -141,20 +141,6 @@ export function PaposEstagiarioSession() {
           );
         })}
       </div>
-
-      {/* Decorative Elements */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 6 }}
-        className="mt-[500px] text-center"
-      >
-        <div className="inline-block bg-orange-500/10 backdrop-blur-lg border border-orange-500/30 rounded-full px-8 py-4 shadow-lg shadow-orange-500/20">
-          <p className="text-lg text-orange-200 italic">
-            "Cada encontro, um aprendizado. Cada aprendizado, uma história."
-          </p>
-        </div>
-      </motion.div>
     </div>
   );
 }
