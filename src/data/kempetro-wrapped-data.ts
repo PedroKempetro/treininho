@@ -137,7 +137,14 @@ export const kempetroWrappedData: KempetroWrappedData = {
       emoji: "🔧",
       message: "Marcus, sua resiliência nos inspirou. Você é forte, focado e não foge da luta. Em tempos onde muitos desistem no primeiro obstáculo, você se manteve firme. Foi uma honra ter alguém com a sua fibra no nosso time. O mercado ganha um guerreiro, e nós ficamos com a saudade da sua força."
     },
-    { name: "Mariana Vitoria E S Santana", course: "Engenharia Civil", area: "Projetos", startDate: "2024-08" },
+    { 
+      name: "Mariana Vitoria E S Santana", 
+      course: "Engenharia Civil", 
+      area: "Projetos", 
+      startDate: "2024-08",
+      emoji: "✨",
+      message: "Mariana, obrigado por ser luz. Seu 2025 com a gente foi marcado não só pela competência, mas pela gentileza. Você tem o dom de deixar o dia mais leve, mesmo quando o trabalho é pesado. Obrigado por somar com a gente, por ser essa presença positiva e por nos lembrar que um time unido e humano vai muito mais longe. Que bom ter você aqui."
+    },
     { name: "Maria Julia Porto Santos", course: "Administração", area: "PMO", startDate: "2024-09" },
     { name: "Pedro Igor Campos Costa", course: "Engenharia Elétrica", area: "Automação", startDate: "2024-09" },
     { name: "Rafael Lombardi Paz da Silva", course: "Ciência da Computação", area: "TI", startDate: "2024-10" },
