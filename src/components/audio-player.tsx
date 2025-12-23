@@ -2,22 +2,26 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Volume2, VolumeX } from "lucide-react";
+import { Volume2, VolumeX, Play } from "lucide-react";
 
 export function AudioPlayer() {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = 0.3;
       
+      // Tenta reproduzir automaticamente
       const playAudio = async () => {
         try {
           await audioRef.current?.play();
           setIsPlaying(true);
+          setHasInteracted(true);
         } catch (error) {
+          // Autoplay bloqueado - esperando clique do usuário
           console.log("Autoplay bloqueado, aguardando interação do usuário");
           setIsPlaying(false);
         }
@@ -27,23 +31,43 @@ export function AudioPlayer() {
     }
   }, []);
 
-  const toggleAudio = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-        setIsPlaying(false);
-      } else {
-        audioRef.current.play();
+  const handleButtonClick = async () => {
+    if (!audioRef.current) return;
+
+    if (!hasInteracted) {
+      // Primeira interação - inicia o áudio
+      try {
+        await audioRef.current.play();
         setIsPlaying(true);
+        setHasInteracted(true);
+        setIsMuted(false);
+      } catch (error) {
+        console.error("Erro ao iniciar áudio:", error);
+      }
+    } else {
+      // Depois da primeira interação, funciona como mute/unmute
+      if (isMuted) {
+        audioRef.current.muted = false;
+        setIsMuted(false);
+      } else {
+        audioRef.current.muted = true;
+        setIsMuted(true);
       }
     }
   };
 
-  const toggleMute = () => {
-    if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
+  const getIcon = () => {
+    if (!hasInteracted || !isPlaying) {
+      return <Play className="w-6 h-6" />;
     }
+    return isMuted ? <VolumeX className="w-6 h-6" /> : <Volume2 className="w-6 h-6" />;
+  };
+
+  const getTitle = () => {
+    if (!hasInteracted || !isPlaying) {
+      return "Clique para iniciar a música";
+    }
+    return isMuted ? "Ativar som" : "Desativar som";
   };
 
   return (
@@ -59,15 +83,15 @@ export function AudioPlayer() {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1, type: "spring" }}
-        onClick={toggleMute}
-        className="fixed bottom-6 left-6 z-50 bg-gradient-to-r from-orange-500 to-orange-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all"
-        title={isMuted ? "Ativar som" : "Desativar som"}
+        onClick={handleButtonClick}
+        className={`fixed bottom-6 left-6 z-50 text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all ${
+          !hasInteracted || !isPlaying
+            ? "bg-gradient-to-r from-green-500 to-green-600 animate-pulse"
+            : "bg-gradient-to-r from-orange-500 to-orange-600"
+        }`}
+        title={getTitle()}
       >
-        {isMuted ? (
-          <VolumeX className="w-6 h-6" />
-        ) : (
-          <Volume2 className="w-6 h-6" />
-        )}
+        {getIcon()}
       </motion.button>
     </>
   );

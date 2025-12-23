@@ -24,8 +24,42 @@ export function WhoAreInternsSession({
         animate={{ opacity: 1, y: 0 }}
         className="text-5xl md:text-7xl font-bold mb-12 text-center"
       >
-        <TypewriterText text="Quem são os Estagiários?" speed={60} />
+        <span className="inline-flex items-center gap-2">
+          <span className="relative inline-block">
+            <span className="absolute inset-0 text-orange-500 blur-xl opacity-70 animate-pulse">Kem</span>
+            <span className="relative text-orange-500" style={{
+              textShadow: '0 0 10px #f97316, 0 0 20px #f97316, 0 0 30px #f97316',
+              animation: 'glitch 3s infinite'
+            }}>Kem</span>
+          </span>
+          <TypewriterText text=" são os Estagiários?" speed={60} delay={500} />
+        </span>
       </motion.h2>
+      
+      <style jsx>{`
+        @keyframes glitch {
+          0%, 100% {
+            transform: translate(0);
+            text-shadow: 0 0 10px #f97316, 0 0 20px #f97316, 0 0 30px #f97316;
+          }
+          20% {
+            transform: translate(-2px, 2px);
+            text-shadow: 0 0 10px #f97316, 2px 0 20px #ff0058, 0 0 30px #f97316;
+          }
+          40% {
+            transform: translate(-2px, -2px);
+            text-shadow: 2px 0 10px #03a9f4, 0 0 20px #f97316, -2px 0 30px #ff0058;
+          }
+          60% {
+            transform: translate(2px, 2px);
+            text-shadow: 0 0 10px #f97316, -2px 0 20px #03a9f4, 0 0 30px #f97316;
+          }
+          80% {
+            transform: translate(2px, -2px);
+            text-shadow: 0 0 10px #ff0058, 0 0 20px #f97316, 2px 0 30px #03a9f4;
+          }
+        }
+      `}</style>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 max-w-4xl">
         <motion.div

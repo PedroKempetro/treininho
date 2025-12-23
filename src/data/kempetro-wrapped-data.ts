@@ -4,7 +4,7 @@ export const kempetroWrappedData: KempetroWrappedData = {
   year: "2024/2025",
   companyName: "Kempetro Engenharia",
   
-  totalInterns: 20,
+  totalInterns: 15,
   totalAreas: 5,
   totalHours: 14400,
   
